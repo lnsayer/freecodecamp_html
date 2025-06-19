@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">London Eagles Survey Form</h1>
+    <p id="description"> We had a great men's and women's touch rugby season and we would love to hear your feedback on how we can make next year's season even better!</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label id="name-label" for="name">Name (required):</label>
+        <input type="text" id="name" placeholder="Ex. Sherlock Holmes" required/>
+
+        <label id="email-label" for="email">Email (required):</label>
+        <input type="email" id="email" placeholder="sherlock.holmes@gmail.com" required/>
+
+        <label id="number-label" for=number> Number:</label>
+        <input type="number" id="number" placeholder="07273924029"min="7" max="14"/>
+      </fieldset>
+
+      <fieldset>
+        <legend>Enjoyment</legend>
+        <label for="dropdown">How did you enjoy the season?</label>
+        <select name="enjoyment" id="dropdown">
+          <option value="poor">Poor</option>
+          <option value="satisfactory">Satisfactory</option>
+          <option value="good">Good</option>
+          <option value="very-good">Very Good</option>
+          <option value="excellent">Excellent</option>
+        </select>
+        <p> Was this your first time playing with Eagles at an NTS? </p>
+        <label for="yes-option">Yes</label>
+        <input id="yes-option" type="radio" value="yes-option" name="nts-first-time" />
+        <label for="no-option">No</label>
+        <input id="no-option" type="radio" value="no-option" name="nts-first-time" />
+        <p> What did you enjoy about the NTS's?</p>
+        <label for="gameplay">Gameplay</label>
+        <input type="checkbox" id="gameplay" name="gameplay" value="gameplay" />
+
+        <label for="team"> Team Atmosphere</label>
+        <input type="checkbox" id="team" name="team" value="team" />
+        <label for="coffee">The Coffee  </label>
+        <input type="checkbox" id ="coffee" name="coffee" value="coffee" />
+
+      </fieldset>
+      <label for="comments">Any other comments?</label>
+      <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+      <button id=submit type="submit">Submit</button>
+
+    </form>
+
+
+
+  </body>
+</html>
